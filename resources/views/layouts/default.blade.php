@@ -24,9 +24,8 @@
       @include('includes.navbar')
         <!-- Content -->
             <div class="content">
-        @yield('content')
+                @yield('content')
              </div>
-       
     </div>
         <!-- /.content -->
       
@@ -35,6 +34,8 @@
     <!-- /#right-panel -->
   
   <!-- script -->
+  @stack('before-script')
   @include('includes.script')
+  @stack('after-script')
 </body>
 </html>
