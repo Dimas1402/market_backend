@@ -3,6 +3,7 @@
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProductGalleryController;
+use App\Http\Controllers\TransactionsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,3 +26,5 @@ Route::get('products/{id}/gallery',[ ProductController::class, 'gallery' ])->nam
 
 Route::resource('products',  ProductController::class);
 Route::resource('product-galleries',  ProductGalleryController::class);
+
+Route::resource('transactions',  TransactionsController::class);

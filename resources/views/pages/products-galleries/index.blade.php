@@ -35,7 +35,7 @@
                                             <form action={{route('product-galleries.destroy', $item->id)}} method="post" class="d-inline"  >
                                                 @csrf
                                                 @method('delete')
-                                                <button class="btn btn-danger btn-sm" > 
+                                                <button type="submit" class="btn btn-danger btn-sm" > 
                                                     <i class="fa fa-trash" ></i>
                                                 </button>
                                             </form>
